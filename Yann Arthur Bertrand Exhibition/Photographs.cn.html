@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作品集</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<!-- Add jQuery library -->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>	
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',
+				closeBtn  : false,
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+<nav class="navbar navbar-default"> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">切换导航</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="Exhibition.cn.html"><img src="img/logo1a.png" alt="" class="nav-icon-logo"/>
+        </a>
+          </div>
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav" id="nav-menu">
+        <li class="active11">
+          <a href="Exhibition.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-home nav-icon-1"></span>
+          <p class="nav-icon-p">主页</p>
+              </a>
+               </li>
+        <li><a href="About.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-user nav-icon-1"></span>
+        <p class="nav-icon-p-1">介绍</p>
+              </a>
+              </li>
+        <li class="nav-icon-aa"><a href="Photographs.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-picture nav-icon-1"></span>
+             <p class="nav-icon-p-2">摄影作品</p>
+              </a></li>
+        <li class="nav-icon-a2"><a href="Project.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-leaf nav-icon-1"></span>
+        <p class="nav-icon-p">摄影项目</p>
+              </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-icon-a3"><a href="#4" class="nav-icon">
+        <span class="glyphicon glyphicon-list-alt nav-icon-2"></span><br><span class="nav-icon-text">时间表</span>
+        </a></li>
+        <li class="nav-icon-a3"><a href="#4" class="nav-icon">
+        <span class="glyphicon glyphicon-earphone nav-icon-2"></span><br><span class="nav-icon-text">联系方式</span>
+        </a></li>
+        <li class="nav-icon-a3"><a href="Photographs.html" class="nav-icon">
+        <span class="glyphicon glyphicon-transfer nav-icon-2"></span><br><span class="nav-icon-text">EN（英语）</span>
+        </a></li>
+      </ul> 
+    </div>
+    <!-- /.navbar-collapse --> 
+</nav>
+    <!--/navbar -->
+
+<div id="wrapper">
+	<div class="centered-wrapper">		
+		<section id="portfolio-wrapper">
+			<ul class="portfolio four-columns" style="padding-left: 0px;">
+				<li>
+					<a class="fancybox" href="img/portfolio/1-1.jpg" data-fancybox-group="gallery" title="詹姆斯·库克">
+					<img src="img/portfolio/1.jpg"  alt="詹姆斯·库克" />
+					</a>
+					<h4>詹姆斯·库克</h4>
+					<p>昆士兰圣灵岛海岸的沙洲，著名的世界遗产大碉堡</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/2-2.jpg" data-fancybox-group="gallery" title="原始岛屿">
+					<img src="img/portfolio/2.jpg"  alt="原始岛屿" />
+					</a>
+					<h4>原始岛屿</h4>
+					<p> 海盗群岛，大约由800座岛屿组成，岛上岩石大约有20亿年历史</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/3-3.jpg" data-fancybox-group="gallery" title="戈斯峭壁">
+					<img src="img/portfolio/3.jpg"  alt="戈斯峭壁" />
+					</a>
+					<h4>戈斯峭壁</h4>
+					<p>一颗彗星撞击地球，造成一个四周岩壁陡立的大陨石坑</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/4-4.jpg" data-fancybox-group="gallery" title="弗雷泽沙岛">
+					<img src="img/portfolio/4.jpg"  alt="弗雷泽沙岛" />
+					</a>
+					<h4>弗雷泽沙岛</h4>
+					<p>弗雷泽沙岛位于阳光海岸北部，世界自然遗产之一，是世界上最大的沙积岛</p>
+					<div class="count hidden"></div>
+				</li>	
+				<li>
+					<a class="fancybox" href="img/portfolio/5-5.jpg" data-fancybox-group="gallery" title="鲨鱼湾">
+					<img src="img/portfolio/5.jpg"  alt="鲨鱼湾" />
+					</a>
+					<h4>鲨鱼湾</h4>
+					<p>世界遗产保护区,拥有4个显著的天然特征，代表了地球的进化史</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/6-6.jpg" data-fancybox-group="gallery" title="野生金伯利高原">
+					<img src="img/portfolio/6.jpg"  alt="野生金伯利高原" />
+					</a>
+					<h4>野生金伯利高原</h4>
+					<p> 位于西澳大利亚州东北部，境内有利奥波德王、卡博伊德等山脉</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/7-7.jpg" data-fancybox-group="gallery" title="维朗德里城堡">
+					<img src="img/portfolio/7.jpg"  alt="维朗德里城堡" />
+					</a>
+					<h4>维朗德里城堡</h4>
+					<p>文艺复兴时期一座极具魅力的建筑，坐落在法国中部的卢瓦尔河畔</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/8-8.jpg" data-fancybox-group="gallery" title="转基因玉米">
+					<img src="img/portfolio/8.jpg"  alt="转基因玉米" />
+					</a>
+					<h4>转基因玉米</h4>
+					<p>“绿色和平”组织在法国商业转基因玉米田的地图制作的麦田怪圈</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/9-9.jpg" data-fancybox-group="gallery" title="洛西诺德滑雪坡">
+					<img src="img/portfolio/9.jpg"  alt="洛西诺德滑雪坡" />
+					</a>
+					<h4>洛西诺德滑雪坡</h4>
+					<p>它被一个绿色的草坪所取代，是欧洲最长的，但绝不仅仅是合成滑雪坡</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/10-10.jpg" data-fancybox-group="gallery" title="科西嘉">
+					<img src="img/portfolio/10.jpg"  alt="科西嘉" />
+					</a>
+					<h4>科西嘉</h4>
+					<p>”婀娜海岛”，是地中海上第三大岛屿，是拿破仑•波拿巴的故乡</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/11-11.jpg" data-fancybox-group="gallery" title="大棱镜泉">
+					<img src="img/portfolio/11.jpg"  alt="大棱镜泉" />
+					</a>
+					<h4>大棱镜泉</h4>
+					<p> 位于美国黄石国家公园境内，是美国最大，世界第三大的温泉</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/12-12.jpg" data-fancybox-group="gallery" title="洋基球场">
+					<img src="img/portfolio/12.jpg"  alt="洋基球场" />
+					</a>
+					<h4>洋基球场</h4>
+					<p>美国职棒大联盟纽约洋基队的棒球场，坐落在纽约市麦康柏斯丹公园</p>
+					<div class="count hidden"></div>
+				</li>
+			</ul>		
+		</section>
+	</div>
+</div>
+
+<!--footer-->
+
+ <a name="4"> </a>
+<footer>
+ 
+  <!--footer part1 -->
+   <div class="footer-line"></div>
+     <div class="container">
+     <div class="row">
+       <div class="col-lg-6">
+           <div class="footer-ul-p1">
+           <h4>时间表</h4>
+            <div>
+            <hr class="footer-timeline">
+             <span class="glyphicon glyphicon-time"></span>
+             <p>开馆世界 : 上午9：00 - 下午17:00<br>
+                 展览会展示时间 : 2018年5月25日 - 7月27日
+             </p>
+             </div>
+            <div>
+            <hr class="footer-timeline">
+             <span class="glyphicon glyphicon-lock"></span>
+             <p>注意 :下午16：00之后不准进馆！</p></div>
+           </div>
+       </div>
+         <div class="col-lg-6">
+           <div class="footer-ul-p1">
+           <h4>联系方式</h4>
+            <div>
+            <hr class="footer-timeline">
+             <span class="glyphicon glyphicon-map-marker"></span>
+             <p>馆址 : 湖北省武汉市武昌东湖路三官殿1号</p>
+             </div>
+            <div>
+            <hr class="footer-timeline">
+             <span class="glyphicon glyphicon-phone-alt"></span>
+             <p>咨询电话 : 027-86796062 , 027-86796067</p></div>
+           </div>
+         </div>
+         </div>
+         </div>
+         <!--/footer part1-->
+         
+         
+    <!-- footer part2-->
+    <div class="footer-bg2">
+     <div class="footer-space row">
+		 <div class="footer-d">
+         <ul class="footer-ul-p2">
+           <li class="footer-p2-title">合作</li>
+           <li><a href="#">湖北美术馆</a></li>
+           <li><a href="#">伯明翰时尚创意学院</a></li>
+		      </ul>
+		 </div>
+		 <div class="footer-d">
+         <ul class="footer-ul1-p2">
+           <li class="footer-p2-title1">相关信息网页</li>
+           <li><a href="http://www.hbmoa.com/" target="_blank">http://www.hbmoa.com/</a></li>
+           <li>
+              <a href="http://www.yannarthusbertrand.org/" target="_blank">http://www.yannarthusbertrand.org/</a></li>
+           <li>
+              <a href="https://www.yannarthusbertrandphoto.com/" target="_blank">https://www.yannarthusbertrandphoto.com/</a></li>
+		     </ul>
+			 </div>
+		 <div class="footer-d">
+        <ul class="footer-ul2-p2">
+          <li class="footer-p2-title2">其他联系方式</li>
+      <li><a href="mailto:someone@microsoft.com?subject=Hello%20again">邮箱 ：1074482963@qq.com</a></li>
+      <li><a href="tencent://message/?uin=1074482963&Site=&Menu=yes">QQ ：1074482963</a></li>
+          <li><a href="#">微信 ：le1074482963</a></li>
+	        </ul>
+		</div>
+		 <p class="footer-p">&copy; 2018 &middot; BIFCA &middot; DMT </p>
+	</div>
+		</div>
+</footer>
+
+<!--/footer-->   
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
