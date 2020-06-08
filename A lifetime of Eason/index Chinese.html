@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>陈奕迅</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+ <!-- Custom Theme files -->
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="keywords" content="" />
+<!--<link href='http://fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/quiz.js"></script>
+ <!---- start-smoth-scrolling---->
+
+</head>
+	<body background="images/header-bg.jpg">
+    <div class="demo text-center">
+	<div id='quiz-container' class="main-quiz-holder" style="top: 30px; padding-left: 50px;"></div>
+  <script type="text/javascript">
+  var init={'questions':[{'question':'陈奕迅的祖籍在哪里？','answers':['东莞市','广州市','深圳市','汕头市'],'correctAnswer':1},{'question':'陈奕迅的出生地在哪里?','answers':['武汉','北京','香港','台湾'],'correctAnswer':3},{'question':'陈奕迅哪一年出生的？','answers':['1972','1973','1974','1975'],'correctAnswer':3},{'question':'陈奕迅在英国哪个大学毕业？','answers':['剑桥大学','金斯顿大学','牛津大学','圣安德鲁斯大学'],'correctAnswer':2}]};
+
+  $(function(){
+    $('#quiz-container').jquizzy({
+          questions: init.questions
+      });
+  });
+  </script>
+
+</div>
+		<!-- container -->
+			<!-- header -->
+			<div  class="header">
+				<div class="container">
+				<!-- top-hedader -->
+				<div class="top-header">
+					<!-- /logo -->
+					<!--top-nav---->
+				<!-- /top-hedader -->
+				</div>
+
+			<div class="banner-info" style="margin-top: 0px;">
+				<div class="col-md-7 header-right">
+					<h1>你好 !</h1>
+					<h6>快来多了解一下陈奕迅吧！</h6>
+					<ul class="address">
+
+					<li>
+							<ul class="address-text">
+								<li><b>姓名</b></li>
+								<li>陈奕迅</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>微博</b></li>
+								<li><a href="http://weibo.com/easonchanyickshun?c=spr_qdhz_bd_baidusmt_weibo_s&nick=%E9%99%B3%E5%A5%95%E8%BF%85%E6%89%80%E9%95%B7&is_all=1"> 陳奕迅所長</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>WEBSITE </b></li>
+								<li><a href="http://tieba.baidu.com/f?kw=%B3%C2%DE%C8%D1%B8&fr=ala0&loc=rec#">陈奕迅吧</a></li>
+							</ul>
+						</li>
+            <li>
+              <ul class="address-text">
+                <li><b>中文网站</b></li>
+                <li><a href="一生一个陈奕迅.html">一生一个陈奕迅</a></li>
+              </ul>
+            </li>
+
+					</ul>
+
+          <form id="inputLink">
+    <input type="button" value="English" id="button1" onClick="location.href='index English.html'"/>
+</form>
+				</div>
+				<div class="col-md-5 header-left">
+          <img src="images/img1.jpg" style="
+              width: 380px;
+              height: 300px;">
+          <canvas id = "myCanvas" width = "500px" height = "250px" style = "background-color:black; height: 190px;"> </canvas>
+          <script>
+              window.onload = function() {
+                  var canvas = document.getElementById("myCanvas");
+                  var c = canvas.getContext("2d");
+                  var px = [35,450];
+                  var py = [35, 200];
+                  var add_x = [1, -1];
+                  var add_y = [1, -1];
+                  var add_deg = [1, -1];
+                  var deg = [0, 0];
+                  var r = 30;	// 半径
+                  var color = [getMulColor(), getMulColor()];
+
+                  window.setInterval(function() {
+                          for(var i = 0; i < 2; i++) {
+                              c.save();
+                              if (i === 0)
+                                  c.clearRect(0, 0, 500, 250);
+                              c.translate(px[i], py[i]);
+                              c.rotate(deg[i] * Math.PI / 180);
+                              c.beginPath();
+                              c.strokeStyle = color[i];
+                              c.lineWidth = 7;
+                              c.arc(0, 0, r, 0, Math.PI * 2, true);
+                              c.stroke();
+
+                              var crack = [];
+                              crack.push(i);
+                              for (var j = 0; j < 2; j++) {
+                                   if (i === j) continue;
+                                   if (dis(px[i], py[i], px[j], py[j]) <= r * 2)
+                                      crack.push(j);	// 相碰的
+                                   }
+
+                              if (crack.length > 1) {	// 有相碰的
+                                  for (var j = 0; j < crack.length; j++) {
+                                      var index = crack[j];
+                                      add_x[index] *= -1;
+                                      add_y[index] *= -1;
+                                      add_deg[index] *= -1;
+                                      }
+                                  }
+
+                              if (px[i] + r >= 500 || px[i] - r <= 0) add_x[i] *= -1;
+                              if (py[i] + r >= 250 || py[i] - r <= 0) add_y[i] *= -1;
+                              if (px[i] + r >= 500 || px[i] - r <= 0 || py[i] + r >= 250 || py[i] - r <= 0) {
+                                  color[i] = getMulColor();
+                                  add_deg[i] *= -1;
+                                  }
+                              px[i] += add_x[i]; py[i] += add_y[i]; deg[i] += add_deg[i];
+                              c.restore();
+                              }
+                      }, 1);
+
+                  function getColor() {
+                      while(true) {
+                          var ans = Math.random();
+                          if (ans < 0.2) continue;
+                          var color = "#" + parseInt(ans * 0xffffff).toString(16);
+                          return color;
+                          }
+                      }
+
+                  function getMulColor() {
+                      var grd = c.createLinearGradient(-r, -r, r, r);
+                      grd.addColorStop(0, getColor());
+                      grd.addColorStop(0.2, getColor());
+                      grd.addColorStop(0.4, getColor());
+                      grd.addColorStop(0.6, getColor());
+                      grd.addColorStop(0.8, getColor());
+                      grd.addColorStop(1, getColor());
+                      return grd;
+                      }
+
+                  function dis(x1, y1, x2, y2) {
+                      var ans = (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+                      return Math.sqrt(ans);
+                      }
+                  }
+          </script>
+
+				</div>
+				<div class="clearfix"> </div>
+
+		      </div>
+			</div>
+		</div>
+	</div>
+
+<!-- //for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+
+
+	</body>
+</html>
