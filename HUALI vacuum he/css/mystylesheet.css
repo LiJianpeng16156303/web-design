@@ -1,0 +1,88 @@
+/*--body--*/
+
+.padding {
+  padding-top: 200px;
+}
+
+.background-image {
+  background-image: url("../img/8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+/*--section--*/
+
+h1,h2{
+  text-align: center;
+}
+
+.section-p {
+  text-align: center;
+  font-size: 12px;
+}
+.section-p-1 {
+  text-align: center;
+  font-size: 10px;
+  padding-bottom: 70px;
+}
+.section-size {
+  font-size: 30px;
+  padding: 20px;
+
+}
+
+.section-line {
+  border:none;
+  border-bottom:0.5px solid black;
+  width: 30%;
+  padding-top: 10px;
+}
+
+.section-line-1 {
+  border:none;
+  border-bottom:0.5px solid black;
+  width: 15%;
+  padding-top: 10px;
+}
+
+.section-padding {
+  border-right: 5px solid black;
+  padding-top: 61px;
+  padding-bottom: 20px;
+  background-color: ghostwhite;
+  opacity: 0.6;
+}
+
+.section-padding-1 {
+  background-color: ghostwhite;
+  padding-top: 20px;
+  opacity: 0.6;
+  border-left: 5px solid black;
+}
+
+/*--//section--*/
+
+/*--button--*/
+a {
+  font-size: 30px;
+  color: black;
+}
+
+a:hover {
+  font-size: 35px;
+  color: lightseagreen;
+}
+
+/*--//button--*/
+
+/*--//body--*/
+
+
+
+/*-- Responsive-Code --*/
+@media screen and (max-width:780px) {
+  section {
+    width: 100%
+  }
