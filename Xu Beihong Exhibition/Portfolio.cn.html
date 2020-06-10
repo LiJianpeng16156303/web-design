@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>作品集</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+<!-- Add jQuery library -->
+<!-- <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script> -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>	
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',
+				closeBtn  : false,
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+
+</head>
+<body>
+<nav class="navbar navbar-default"> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="index.html"><img src="img/85(1).png" alt="" class="nav-icon-logo"/>
+        </a>
+         <div class="navbar-intro">
+         	<h1>徐悲鸿</h1>
+         </div>
+          </div>
+          <p class="nav-ppp">中国现代美术教育的奠基者</p>
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav" id="nav-menu">
+        <li class="active1">
+          <a href="index.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-home nav-icon-1"></span>
+          <p class="nav-icon-p">主页</p>
+              </a>
+               </li>
+        <li><a href="About.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-user nav-icon-1"></span>
+        <p class="nav-icon-p-1">介绍</p>
+              </a>
+              </li>
+        <li class="nav-icon-a"><a href="Portfolio.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-picture nav-icon-1"></span>
+             <p class="nav-icon-p-2">作品</p>
+              </a></li>
+        <li class="nav-icon-a2"><a href="Story.cn.html" class="nav-icon">
+            <span class="glyphicon glyphicon-leaf nav-icon-1"></span>
+          <p class="nav-icon-p">典故</p>
+              </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-icon-a3"><a href="Portfolio.html" class="nav-icon">
+         <span class="nav-icon-text">CN（英文）</span>
+        </a></li>
+      </ul> 
+    </div>
+    <!-- /.navbar-collapse --> 
+</nav>
+    <!--/navbar -->
+	
+    <div class="container">
+      <div class="man">
+        <div class="container">
+            <div class="man-grids">
+                 <div class="col-md-6">
+              <img class=" intro-img img-responsive" src="img/负伤之狮.jpg"  alt="负伤之狮" />
+                </div>
+              <div class="col-md-6 ">
+                <h1 class="intro-h1">负伤之狮</h1>
+                <p class="container-p">《负伤之狮》是抗日战争时期徐悲鸿创作的一幅中国画。纸本；纵110厘米，横109厘米；作于1938年；藏于私人。</p>
+                <p class="container-p">1938年的新年，中国的抗战形势愈加紧张。1月上旬，时任中央大学艺术系主任的徐悲鸿与挚友吴蕴瑞流寓重庆，谈论国难民情之时，徐悲鸿情有所触，奋笔挥毫，顷刻便写就了一幅寄寓着无限深意的激情之作——《负伤之狮》并在画的右上角写上题识，以记述这幅作品诞生的不寻常经历</p>
+                <p class="container-p">国难孔亟，时与麟若先生同客重庆，相顾不怿，写此聊抒忧怀。这是一幅现实主义和浪漫主义结合的杰作。中国被称作东方的“睡狮”，现在被日本帝国主义侵占了中国东北大部分国土，“睡狮”已成了负伤雄狮。这头双目怒视的负伤雄狮在不堪回首的神情中，准备战斗、拼搏，蕴藏着坚强与力量。</p>
+              </div>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+<div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"><img src="images/1.jpg" alt="First slide image" class="center-block">
+          <div class="carousel-caption">
+            <h3>奔马图</h3>
+            <p>1944年作</p>
+          </div>
+        </div>
+        <div class="item"><img src="images/2.jpg" alt="Second slide image" class="center-block">
+          <div class="carousel-caption">
+            <h3>墨竹</h3>
+            <p>1938年作</p>
+          </div>
+        </div>
+        <div class="item"><img src="images/3.jpg" alt="Third slide image" class="center-block">
+          <div class="carousel-caption">
+            <h3>行书</h3>
+            <p>1943年作</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+	</div>
+	
+<div id="wrapper">
+	<div class="centered-wrapper">		
+		<section id="portfolio-wrapper">
+			<ul class="portfolio four-columns" style="padding-left: 0px;">
+				<li>
+					<a class="fancybox" href="img/portfolio/1-1.jpg" data-fancybox-group="gallery" title="墨笔画马">
+					<img src="img/portfolio/1.jpg"  alt="墨笔画马" />
+					</a>
+					<h4>墨笔画马</h4>
+					<p>1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/2-2.jpg" data-fancybox-group="gallery" title="平原奔马">
+					<img src="img/portfolio/2.jpg"  alt="平原奔马" />
+					</a>
+					<h4>平原奔马</h4>
+					<p> 1944年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/3-3.jpg" data-fancybox-group="gallery" title="骏马静思">
+					<img src="img/portfolio/3.jpg"  alt="骏马静思" />
+					</a>
+					<h4>骏马静思</h4>
+					<p>1943年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/4-4.jpg" data-fancybox-group="gallery" title="奔马回眸">
+					<img src="img/portfolio/4.jpg"  alt="奔马回眸" />
+					</a>
+					<h4>奔马回眸</h4>
+					<p>1945年作</p>
+					<div class="count hidden"></div>
+				</li>	
+				<li>
+					<a class="fancybox" href="img/portfolio/5-5.jpg" data-fancybox-group="gallery" title="春日四喜鹊">
+					<img src="img/portfolio/5.jpg"  alt="春日四喜鹊" />
+					</a>
+					<h4>春日四喜鹊</h4>
+					<p>1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/6-6.jpg" data-fancybox-group="gallery" title="归去图">
+					<img src="img/portfolio/6.jpg"  alt="归去图" />
+					</a>
+					<h4>归去图</h4>
+					<p> 1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/7-7.jpg" data-fancybox-group="gallery" title="群乐图">
+					<img src="img/portfolio/7.jpg"  alt="群乐图" />
+					</a>
+					<h4>群乐图</h4>
+					<p>1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/8-8.jpg" data-fancybox-group="gallery" title="竹报平安">
+					<img src="img/portfolio/8.jpg"  alt="竹报平安" />
+					</a>
+					<h4>竹报平安</h4>
+					<p>1939年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/9-9.jpg" data-fancybox-group="gallery" title="古琴兼作水奉声">
+					<img src="img/portfolio/9.jpg"  alt="古琴兼作水奉声" />
+					</a>
+					<h4>古琴兼作水奉声</h4>
+					<p>1939年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/10-10.jpg" data-fancybox-group="gallery" title="扇页">
+					<img src="img/portfolio/10.jpg"  alt="扇页" />
+					</a>
+					<h4>扇页</h4>
+					<p>1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/11-11.jpg" data-fancybox-group="gallery" title="行书">
+					<img src="img/portfolio/11.jpg"  alt="行书" />
+					</a>
+					<h4>行书</h4>
+					<p> 1942年作</p>
+					<div class="count hidden"></div>
+				</li>
+				<li>
+					<a class="fancybox" href="img/portfolio/12-12.jpg" data-fancybox-group="gallery" title="家书">
+					<img src="img/portfolio/12.jpg"  alt="家书" />
+					</a>
+					<h4>家书</h4>
+					<p>1939年作</p>
+					<div class="count hidden"></div>
+				</li>
+			</ul>		
+		</section>
+	</div>
+</div>
+
+<!--footer-->
+
+<footer>
+    <div class="footer-bg2">
+     <div class="footer-space row">
+		 <div class="footer-d">
+         <ul class="footer-ul-p2">
+           <li class="footer-p2-title">合作</li>
+           <li><a href="#">湖北美术馆</a></li>
+           <li><a href="#">伯明翰时尚创意学院</a></li>
+		      </ul>
+		 </div>
+		 <div class="footer-d">
+         <ul class="footer-ul1-p2">
+           <li class="footer-p2-title1">相关信息网页</li>
+           <li><a href="http://www.hbmoa.com/" target="_blank">http://www.hbmoa.com/</a></li>
+           <li>
+              <a href="http://https://xubeihong.artron.net/" target="_blank">
+				  https://xubeihong.artron.net/</a>
+			 </li>
+		     </ul>
+			 </div>
+		 <div class="footer-d">
+        <ul class="footer-ul2-p2">
+          <li class="footer-p2-title2">其他联系方式</li>
+      <li><a href="mailto:someone@microsoft.com?subject=Hello%20again">邮箱 ：1074482963@qq.com</a></li>
+      <li><a href="tencent://message/?uin=1074482963&Site=&Menu=yes">QQ ：1074482963</a></li>
+          <li><a href="#">微信 ：le1074482963</a></li>
+	        </ul>
+		</div>
+		 <p class="footer-p">&copy; 2018 &middot; BIFCA &middot; DMT </p>
+	</div>
+		</div>
+</footer>
+<!--/footer-->   
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
